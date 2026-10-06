@@ -1,4 +1,4 @@
-1. connectDB() sequence in server.js (marked)
+1. connectDB() standard sequence in server.js ??
 2. require mongoose not in suggestion
 3. why find() doesnt use the if statement in todoRoutes.js ? standard practice: where to implement it whole to do is blank??
 4. when to use findOneAndUpdate vs findByIDandUpdate in todoRoutes.js ??
