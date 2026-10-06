@@ -2,7 +2,7 @@ import express from "express";
 
 // note:
     // "Todo" model: for connecting routes to db and have access to methods like create(), find()
-import Todo from "../models/Todo";
+import Todo from "../models/Todo.js";
 const router = express.Router(); // router object will contain methods : get, post etc
 
 // note: 
@@ -89,7 +89,8 @@ router.put("/:id", async(req, res)=>{
 
 
 // UPDATE only selective field of an item - PATCH (CRUD) ----------------------------------------------- 
-// ????????????? when to use findOne vs findByID???????
+// ????????????? when to use findOne  vs findByID???????
+// ans: findOne gives 1st search result
 router.patch("/:id/status", async(req, res)=>{
     try{
         const todoUpdatePatch = await Todo.findByIdAndUpdate(
@@ -115,7 +116,7 @@ router.patch("/:id/status", async(req, res)=>{
 })
 
 // DELETE one (CRUD)-----------------------------------
-router.delete("/id:", async(req, res)=>{
+router.delete("/:id", async(req, res)=>{
     try{
         const todoDelete = await Todo.findByIdAndDelete(req.params.id)
         if(!todoDelete){

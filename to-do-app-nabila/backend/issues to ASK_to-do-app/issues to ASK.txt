@@ -1,7 +1,7 @@
 1. connectDB() standard sequence in server.js ??
-2. require mongoose not in suggestion
+2. require mongoose not in suggestion (not always available in VS coder)
 3. why find() doesnt use the if statement in todoRoutes.js ? standard practice: where to implement it whole to do is blank??
-4. when to use findOneAndUpdate vs findByIDandUpdate in todoRoutes.js ??
+4. when to use findOneAndUpdate vs findByIDandUpdate in todoRoutes.js ?? ans: findOne gives 1st search
 
 5. /// ???????????????????? why 500 but error.message ?
 

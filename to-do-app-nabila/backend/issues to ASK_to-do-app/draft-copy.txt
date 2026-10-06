@@ -1,0 +1,13 @@
+6ac4ece8dac3c5f0bbcc13d6
+Learn MERN backend"
+
+6ac4ec5fdac3c5f0bbcc13d5
+"Nilus kitche Dash-db connect",
+
+"_id": "6ac4eaeadac3c5f0bbcc13d4",
+        "title": "Learn MERN with AI",
+
+
+
+SIR Recommended practise for TODO:
+Tenstack, axios,(front end connect) controllers

@@ -13,7 +13,7 @@ const toDoSchema = new mongoose.Schema(
         // nested objects(definition objects)
         title:{
             type: String,
-            required: true // ????????????? require mongoose not in suggestion, showing "require" ??????
+            required: true 
         },
 
         completed: {

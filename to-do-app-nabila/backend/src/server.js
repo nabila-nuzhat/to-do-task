@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 });
 
 // ????????????????? why not before app.get ????????????????
-app.use("/api/todos", todoRoutes) // syntax: app.use([path,] callback [, callback...]) // todos= plural REST convention // "/api/todos" = this route is for data, not for a web page.
+app.use("/api/todos", todoRoutes); // syntax: app.use([path,] callback [, callback...]) // todos= plural REST convention // "/api/todos" = this route is for data, not for a web page.
 connectDB();
 
 app.listen(PORT, () =>{
