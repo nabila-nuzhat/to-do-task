@@ -1,3 +1,6 @@
 - schema
     - Schema is a general computing term for a formal description of the structure of data: what fields exist, their data types, and their constraints.
     The word comes from the Greek skhēma, meaning "form" or "shape".
+
+    -  * The inner function can still use schema after validate has finished running. This is a closure:
+     a function that keeps access to variables from the scope where it was created.(authSchema.js)
