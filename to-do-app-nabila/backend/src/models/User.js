@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import { maxLength } from "zod";
 
 const userSchema = new mongoose.Schema(
   {
@@ -22,6 +23,7 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
       minlength: 6,
+      maxLength: 12 // extra added
     },
   },
   {

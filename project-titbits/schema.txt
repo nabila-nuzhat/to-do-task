@@ -1,0 +1,3 @@
+- schema
+    - Schema is a general computing term for a formal description of the structure of data: what fields exist, their data types, and their constraints.
+    The word comes from the Greek skhēma, meaning "form" or "shape".

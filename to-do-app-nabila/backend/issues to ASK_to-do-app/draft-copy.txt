@@ -11,3 +11,36 @@ Learn MERN backend"
 
 SIR Recommended practise for TODO:
 Tenstack, axios,(front end connect) controllers
+
+todo-backend/
+│
+├── .env
+├── .gitignore
+├── package.json
+│
+└── src/
+    │
+    ├── server.js
+    │
+    ├── config/
+    │   └── db.js
+    │
+    ├── models/
+    │   ├── User.js
+    │   └── Todo.js
+    │
+    ├── controllers/
+    │   ├── authController.js
+    │   └── todoController.js
+    │
+    ├── middleware/
+    │   ├── authMiddleware.js
+    │   └── validate.js
+    │
+    ├── schemas/
+    │   ├── authSchemas.js
+    │   └── todoSchemas.js
+    │
+    └── routes/
+        ├── authRoutes.js
+        └── todoRoutes.js
