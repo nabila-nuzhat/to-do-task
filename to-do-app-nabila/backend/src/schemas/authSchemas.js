@@ -19,11 +19,12 @@ const registerSchema = z.object({
     .string()
     .trim()
     .min(2, "Name must be at least 2 characters")
-    .max(50, "Name cannot exceed 50 characters"),
+    .max(50, "Name cannot exceed 50 characters"), // cross check LATER
 
     email: z.email("Please provide a valid email").transform((email)=> email.toLowerCase().trim()),
 
-    password: z.string().min(6, "Password is required with minimum 6 characters").maxLength(12, "Password is required with maximum 12 characters")
+    // password: z.string().min(6, "Password is required with minimum 6 characters").maxLength(12, "Password is required with maximum 12 characters")
+    password: z.string().min(6, "Password is required with minimum 6 characters")
 });
 
 // login Zod schema ------------------

@@ -46,3 +46,18 @@ todo-backend/
     └── routes/
         ├── authRoutes.js
         └── todoRoutes.js
+
+## Bearer Token :
+    # frointend
+        The frontend developer (you) writes the word Bearer by hand, with the trailing space. Your middleware then checks for it:
+
+        js
+        authorizationHeader.startsWith("Bearer ")
+    #axios
+        axios.get("/api/todos", {
+        headers: { Authorization: `Bearer ${token}` },
+        });
+    # Or in Postman: Authorization tab → Type: Bearer Token → paste the token. Postman builds the same header.
+
+# password lengt, name length ofcharacter zod and mongoose db is not connected?! not needed in case of dbv.
+bcz of hashing the password lenghth restriction can be avoided. hash might make it 72-128 characters that may clash.

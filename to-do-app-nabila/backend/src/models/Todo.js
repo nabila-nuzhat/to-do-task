@@ -13,13 +13,22 @@ const toDoSchema = new mongoose.Schema(
         // nested objects(definition objects)
         title:{
             type: String,
-            required: true 
+            required: true,
+            minlength: 1,
+            maxlength: 100,
         },
 
         completed: {
             type: Boolean,
             default: false
-        }
+        },
+
+         user: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "User",
+            required: true,
+    },
+
     },
 
     // optional arguement

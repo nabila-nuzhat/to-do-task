@@ -11,3 +11,7 @@
 8. why User from Models isnt showing in suggestion in authcontroller.js ISSUE SOLVED
 ans: only typing User without typing import will work.
 9. package json could not be read after adding authcontroller ISSUE SOLVED 
+---------------------------------------------------------------------
+10. password lengt, name length ofcharacter zod and mongoose db is not connected?! not needed in case of dbv.
+bcz of hashing the password lenghth restriction can be avoided. hash might make it 72-128 characters that may clash.
+cross check again before going to nilu's kitchen

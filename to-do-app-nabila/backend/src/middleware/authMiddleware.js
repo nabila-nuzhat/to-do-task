@@ -1,0 +1,39 @@
+import jwt from "jsonwebtoken";
+
+const protect = (req, res, next) => {
+  try {
+    const authorizationHeader =
+      req.headers.authorization;
+
+    if (!authorizationHeader) {
+      return res.status(401).json({
+        message: "Authentication required",
+      });
+    }
+
+    const token = authorizationHeader.startsWith("Bearer ")
+      ? authorizationHeader.split(" ")[1]
+      : null;
+
+    if (!token) {
+      return res.status(401).json({
+        message: "Invalid authentication format",
+      });
+    }
+
+    const decoded = jwt.verify(
+      token,
+      process.env.JWT_SECRET
+    );
+
+    req.user = decoded;
+
+    next();
+  } catch (error) {
+    return res.status(401).json({
+      message: "Invalid or expired token",
+    });
+  }
+};
+
+export default protect;

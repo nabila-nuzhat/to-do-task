@@ -7,8 +7,8 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
       trim: true,
-      minlength: 2,
-      maxlength: 50,
+      // minlength: 2,
+      // maxlength: 50, can be added from frontend. not recommended for backend, watch later
     },
 
     email: {
@@ -22,8 +22,8 @@ const userSchema = new mongoose.Schema(
     password: {
       type: String,
       required: true,
-      minlength: 6,
-      maxLength: 12 // extra added
+      // minlength: 6,
+      // maxLength: 12 // can be added from frontend. not recommended for backend
     },
   },
   {
