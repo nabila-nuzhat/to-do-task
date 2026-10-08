@@ -6,3 +6,8 @@
 5. /// ???????????????????? why 500 but error.message ?
 
 5. CHECK todoRoutes.js
+-------------------------------------
+7. why 400 status (bad request) in validation failed = validate.js ??
+8. why User from Models isnt showing in suggestion in authcontroller.js ISSUE SOLVED
+ans: only typing User without typing import will work.
+9. package json could not be read after adding authcontroller ISSUE SOLVED 

@@ -38,7 +38,7 @@ const validate = (schema) =>{
     return (req, res, next) =>{
         const result = schema.safeParse(req.body);
         if(!result.success){
-            res.status(400).json({
+            res.status(400).json({ // ????????? why 400 status (bad request) in validation failed = validate.js ?
                 message: "Validation failed",
                 errors: result.error.issues,
             });

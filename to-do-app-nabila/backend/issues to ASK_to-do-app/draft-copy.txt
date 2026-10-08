@@ -12,6 +12,8 @@ Learn MERN backend"
 SIR Recommended practise for TODO:
 Tenstack, axios,(front end connect) controllers
 
+# # JWT_SECRET generated using (in terminal): node -e "console.log(require('crypto').randomBytes(32).toString('hex'))
+
 todo-backend/
 │
 ├── .env
